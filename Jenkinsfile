@@ -6,9 +6,10 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('build') {
       steps {
-        echo 'hello go'
+        sh 'go get -u https://github.com/liunanhao/vscode-remote-try-go'
+        sh 'go build .'
       }
     }
 
