@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       steps {
         sh 'git clone https://github.com/liunanhao/vscode-remote-try-go'
-        sh 'go build .'
+        sh 'cd vscode-remote-try-go && go build .'
       }
     }
 
