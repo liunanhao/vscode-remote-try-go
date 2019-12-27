@@ -8,8 +8,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'export GOPATH=`pwd`'
-        sh 'echo $GOPATH'
+        sh '''export GOPATH=`pwd`
+cd src/main
+go build .'''
+        sh 'ls src/main'
       }
     }
 
