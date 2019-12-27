@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'go get -u https://github.com/liunanhao/vscode-remote-try-go'
+        sh 'git clone https://github.com/liunanhao/vscode-remote-try-go'
         sh 'go build .'
       }
     }
