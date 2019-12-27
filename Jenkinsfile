@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'cd vscode-remote-try-go && go build .'
+        sh 'go build .'
       }
     }
 
